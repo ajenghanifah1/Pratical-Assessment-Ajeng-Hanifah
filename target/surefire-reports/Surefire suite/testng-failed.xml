@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" parallel="classes" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="mealPlanTest">
+        <methods>
+          <include name="testMealPlannerGenerate"/>
+          <include name="testMealPlannerParameterGenerate"/>
+          <include name="TearDownSuite"/>
+          <include name="SetUpSuite"/>
+          <include name="testAddMealPlan"/>
+        </methods>
+      </class> <!-- mealPlanTest -->
+      <class name="petRequestTest">
+        <methods>
+          <include name="deletePetTest"/>
+          <include name="TearDownSuite"/>
+          <include name="findByIdTest"/>
+          <include name="updatePetTest"/>
+          <include name="SetUpSuite"/>
+          <include name="findByStatusTest"/>
+        </methods>
+      </class> <!-- petRequestTest -->
+      <class name="userRequestTest">
+        <methods>
+          <include name="logoutTest"/>
+          <include name="SetUpSuite"/>
+          <include name="updateUserTest"/>
+          <include name="findByUsernameTest"/>
+          <include name="deleteUserTest"/>
+          <include name="addUserTest"/>
+        </methods>
+      </class> <!-- userRequestTest -->
+      <class name="ConnectUserTest">
+        <methods>
+          <include name="testConnectUser"/>
+          <include name="TearDownSuite"/>
+          <include name="SetUpSuite"/>
+        </methods>
+      </class> <!-- ConnectUserTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
